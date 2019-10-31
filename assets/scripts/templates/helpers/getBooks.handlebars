@@ -1,0 +1,15 @@
+<div class="books">
+   <h2>Books: </h2>
+   <ul id="books">
+   {{#each books as |book|}}
+     <div>
+       <div>
+        Book ID: {{book.id}} </br>
+        Book Title: {{book.title}} </br>
+        Book Author: {{book.author}} </br>
+      </div>
+      <br>
+     </div>
+   {{/each}}
+   </ul>
+</div>
