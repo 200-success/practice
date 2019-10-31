@@ -1,5 +1,6 @@
 'use strict'
 
+const bookEvents = require('./books/events.js')
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
@@ -7,5 +8,5 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+  $('#get').on('click', bookEvents.onGetBooks)
 })
